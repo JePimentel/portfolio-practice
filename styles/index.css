@@ -1,0 +1,264 @@
+:root {
+    --blue: #34b0be;
+    --gray: #d1ceca;
+    --backgroundBlue: #020518;
+    --white: #ffffff;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: var(--backgroundBlue);
+    color: var(--gray);
+    padding: 0 1.4rem;
+    font-size: 1.6rem;
+    text-align: center;
+}
+
+nav {
+    height: 5rem;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 2.4rem;
+}
+
+h2, span {
+    color: var(--blue);
+}
+
+.contactCards span {
+    color: #959595;
+}
+
+h3 {
+    color: #0b0b0b
+}
+
+p {
+    color: #959595;
+}
+
+nav img {
+    filter: invert(1);
+}
+
+.navMenu {
+    display: none;
+}
+
+.presentationName {
+    margin-top: 3rem;
+}
+
+.serviceCard p {
+    margin-bottom: 15px;
+}
+
+.aboutMe p {
+    line-height: 2.5rem;
+}
+
+.presentationContainer ,.aboutMe, .services, .mySkills, .myPortfolio, .contact {
+    margin-bottom: 6rem;
+}
+
+.presentationName p, .presentationExp p {
+    font-size: 1.4rem;
+    color: var(--white);
+}
+
+
+main .presentationContainer {
+    position: relative;
+    background-image: url('../images/logos-images/photo\ mobile.png');
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: 14rem;
+    text-align: center;
+}
+
+main .background {
+    width: 20.5rem;
+    height: 22rem;
+    background-color: var(--gray);
+    position: relative;
+    top: .8rem;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: 0 auto;
+    opacity: .2;
+    z-index: -1;
+    border-radius: 50%;
+}
+
+.presentationName h1 {
+    font-size: 2rem;
+    font-weight: 400;
+    display: flex;
+    flex-direction: column;
+    border-bottom: .2rem solid;
+    padding: .8rem;
+    margin: 1rem 2rem;
+}
+
+.presentationName h1 span {
+    font-size: 5rem;
+    font-weight: 600;
+}
+
+.presentationLogosExp {
+    display: flex;
+    justify-content: center;
+}
+
+.presentationLogosExp picture {
+    background-color: var(--white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: .5rem;
+    border-radius: 5rem;
+    margin: 0 1rem;
+    opacity: .9;
+}
+
+.presentationLogosBack {
+    width: 100%;
+    height: 8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4rem;
+    background-color: var(--white);
+    opacity: .3;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    position: absolute;
+}
+
+.presentationLogos {
+    width: 100%;
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4rem;
+    padding: 1.5rem 2.5rem;
+    border-radius: 1rem;
+}
+
+.presentationLogos picture {
+    width: 10rem;
+    height: 5rem;
+    background-color: var(--white);
+    opacity: .8;
+    border-radius: 1rem;
+    padding: .4rem;
+}
+
+.presentationLogos img {
+    width: 100%;
+    height: 100%;
+}
+
+.servicesCards {
+    display: flex;
+    align-items: center;
+    overflow-x: scroll;
+    height: 320px;
+}
+
+.servicesCards .serviceCard {
+    min-width: 250px;
+    max-width: 280px;
+    background-color: var(--white);
+    border-radius: 5px;
+    padding: 40px 40px 20px;
+    margin: 0 10px;
+    position: relative;
+    z-index: -2;
+}
+
+.vector {
+    background-image: url('../images/Vectores/Ellipse\ 14.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    border-radius: 10px;
+}
+
+.myPortfolio .portfolios {
+    display: flex;
+    align-items: center;
+    overflow-x: scroll;
+}
+
+.portfolios picture {
+    min-width: 250px;
+}
+
+.portfolios picture img {
+    border-radius: 10px;
+}
+
+.portfolios picture:nth-child(2){
+    margin: 0 20px;
+}
+
+.portfolios img {
+    width: 100%;
+    height: 100%;
+}
+
+.contactCards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contactCards .contactCard {
+    width: 200px;
+    background-color: var(--white);
+    padding: 40px 20px 20px;
+    border-radius: 10px;
+    position: relative;
+    z-index: -2;
+}
+
+.contactCard h3 {
+    margin-bottom: 10px;
+}
+
+.contactCard img{
+    width: 60px;
+}
+
+.contactCard:nth-child(2) {
+    margin-bottom: 40px;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 120px;
+}
+
+footer p {
+    color: var(--blue);
+}
