@@ -57,12 +57,26 @@ nav img {
     line-height: 2.5rem;
 }
 
-main {
-    padding: 0 1.4rem;
+footer p {
+    color: var(--blue);
 }
 
 .presentationContainer ,.aboutMe, .services, .mySkills, .myPortfolio, .contact {
     margin-bottom: 6rem;
+}
+
+.servicesCards::-webkit-scrollbar, .portfolios::-webkit-scrollbar {
+    display: none;
+}
+
+.mainBlur {
+    filter: blur(2px);
+    transition: all 300ms;
+}
+
+main {
+    padding: 0 1.4rem;
+    margin-top: 5rem;
 }
 
 .presentationName p, .presentationExp p {
@@ -77,6 +91,54 @@ nav {
     justify-content: flex-end;
     align-items: center;
     padding-right: 2.4rem;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    background-color: var(--backgroundBlue);
+}
+
+.navMenu {
+    display: flex;
+    justify-content: flex-start;
+    text-align: start;
+    width: 70%;
+    height: 100vh;
+    background-color: var(--backgroundBlue);
+    opacity: .9;
+    position: absolute;
+    top: 5rem;
+    right: -70%;
+    transition: all 300ms;
+}
+
+.menuOpen {
+    position: absolute;
+    right: 0;
+}
+
+
+.navMenu ul {
+    list-style: none;
+}
+
+.navMenu ul li {
+    margin-bottom: 20px;
+}
+
+.navMenu a{
+    text-decoration: none;
+    color: var(--white);
+    font-weight: 600;
+    line-height: 10px;
+    transition: all 200ms;
+}
+
+.navMenu a:hover{
+    color: var(--blue);
+}
+
+.navHome a{
+    color: var(--blue);
 }
 
 main .presentationContainer {
@@ -180,9 +242,7 @@ main .background {
     height: 320px;
 }
 
-.servicesCards::-webkit-scrollbar {
-    background-color: #020518;
-}
+
 
 .servicesCards .serviceCard {
     min-width: 250px;
@@ -260,15 +320,15 @@ main .background {
 }
 
 .marketingProgress {
-    animation: marketing 2s forwards;
+    animation: marketing 1.5s forwards;
 }
 
 .uiProgress {
-    animation: ui 3s forwards;
+    animation: ui 2s forwards;
 }
 
 .uxProgress {
-    animation: ux 3.5s forwards;
+    animation: ux 2.5s forwards;
 }
 
 @keyframes marketing {
@@ -294,7 +354,7 @@ main .background {
 .contactCards .contactCard {
     width: 200px;
     background-color: var(--white);
-    padding: 40px 20px 20px;
+    padding: 40px 10px 20px;
     border-radius: 10px;
     position: relative;
     z-index: -2;
@@ -317,8 +377,4 @@ footer {
     justify-content: center;
     align-items: center;
     height: 120px;
-}
-
-footer p {
-    color: var(--blue);
 }

@@ -2,6 +2,9 @@ const skills = document.querySelector('.skills')
 const marketing = document.querySelector('#marketing')
 const ui = document.querySelector('#ui')
 const ux = document.querySelector('#ux')
+const menuIcon = document.querySelector('#menuIcon')
+const navMenu = document.querySelector('.navMenu')
+const main = document.querySelector('#main')
 
 const loading = (entries, observer) => {
     if (entries[0].isIntersecting) {
@@ -19,3 +22,8 @@ const observer = new IntersectionObserver(loading, {
 
 observer.observe(skills)
 
+menuIcon.addEventListener('click', () => {
+    navMenu.classList.toggle('menuOpen')
+    main.classList.toggle('mainBlur')
+})
+ 
