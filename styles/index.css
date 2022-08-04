@@ -17,18 +17,8 @@ body {
     font-family: 'Montserrat', sans-serif;
     background-color: var(--backgroundBlue);
     color: var(--gray);
-    padding: 0 1.4rem;
     font-size: 1.6rem;
     text-align: center;
-}
-
-nav {
-    height: 5rem;
-    width: 100%;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    padding-right: 2.4rem;
 }
 
 h2, span {
@@ -67,6 +57,10 @@ nav img {
     line-height: 2.5rem;
 }
 
+main {
+    padding: 0 1.4rem;
+}
+
 .presentationContainer ,.aboutMe, .services, .mySkills, .myPortfolio, .contact {
     margin-bottom: 6rem;
 }
@@ -76,6 +70,14 @@ nav img {
     color: var(--white);
 }
 
+nav {
+    height: 5rem;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 2.4rem;
+}
 
 main .presentationContainer {
     position: relative;
@@ -132,7 +134,7 @@ main .background {
     opacity: .9;
 }
 
-.presentationLogosBack {
+.presentationLogosBackground {
     width: 100%;
     height: 8rem;
     display: flex;
@@ -176,6 +178,10 @@ main .background {
     align-items: center;
     overflow-x: scroll;
     height: 320px;
+}
+
+.servicesCards::-webkit-scrollbar {
+    background-color: #020518;
 }
 
 .servicesCards .serviceCard {
@@ -224,6 +230,60 @@ main .background {
     width: 100%;
     height: 100%;
 }
+
+.skill:nth-child(3) {
+    margin: 10px 0;
+}
+
+.skill .skillInfo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.skill .skillInfo p {
+    color: var(--white);
+    font-weight: 600;
+}
+
+.skill .skillProgress {
+    border-radius: 50px;
+    background-color: var(--white);
+    height: 15px;
+}
+
+.skillProgress .progress {
+    width: 0%;
+    background-color: var(--blue);
+    height: 100%;
+    border-radius: 50px;
+}
+
+.marketingProgress {
+    animation: marketing 2s forwards;
+}
+
+.uiProgress {
+    animation: ui 3s forwards;
+}
+
+.uxProgress {
+    animation: ux 3.5s forwards;
+}
+
+@keyframes marketing {
+    0%{width: 0;}
+    100%{width: 75%;}
+}
+@keyframes ui {
+    0%{width: 0;}
+    100%{width: 90%;}
+}
+@keyframes ux {
+    0%{width: 0;}
+    100%{width: 80%;}
+}
+/*  */
 
 .contactCards {
     display: flex;
