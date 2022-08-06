@@ -62,6 +62,21 @@ footer p {
     color: var(--blue);
 }
 
+.navMenu ul {
+    list-style: none;
+}
+.navMenu ul li {
+    margin-bottom: 20px;
+}
+
+.navMenu a:hover{
+    color: var(--blue);
+}
+
+nav .navHome a{
+    color: var(--blue);
+}
+
 .presentationContainer , .aboutMe, .services, .mySkills, .myPortfolio, .contact {
     margin-bottom: 6rem;
     scroll-margin-top: 8ex;
@@ -118,29 +133,12 @@ nav {
     right: 0;
 }
 
-
-.navMenu ul {
-    list-style: none;
-}
-
-.navMenu ul li {
-    margin-bottom: 20px;
-}
-
 .navMenu a{
     text-decoration: none;
     color: var(--white);
     font-weight: 600;
     line-height: 10px;
     transition: all 200ms;
-}
-
-.navMenu a:hover{
-    color: var(--blue);
-}
-
-.navHome a{
-    color: var(--blue);
 }
 
 main .presentationContainer {
@@ -184,14 +182,6 @@ main .background {
     font-size: 5rem;
     font-weight: 600;
 } 
-
-@keyframes typing {
-    from {width: 0ch}
-}
-
-@keyframes blink {
-    50% {border-color: transparent;}
-}
 
 .presentationLogosExp {
     display: flex;
@@ -246,8 +236,6 @@ main .background {
     overflow-x: scroll;
     height: 320px;
 }
-
-
 
 .servicesCards .serviceCard {
     min-width: 250px;
@@ -353,7 +341,6 @@ main .background {
     0%{width: 0;}
     100%{width: 80%;}
 }
-/*  */
 
 .contactCards {
     display: flex;
@@ -368,9 +355,6 @@ main .background {
     padding: 40px 10px 20px;
     border-radius: 10px;
     margin-bottom: 30px;
-
-
-
     position: relative;
     z-index: -2;
 }
@@ -410,23 +394,33 @@ footer {
 }
 
 @media (min-width: 768px) {
-
     .aboutMe p {
         font-size: 1.8rem;
     }
-
     h3 {
         font-size: 1.9rem;
     }
-
     .serviceCard p {
         font-size: 1.7rem;
     }
-    main {
-        padding: 0 5rem;
+    .navMenu ul {
+        display: flex;
+    }
+    .navMenu ul li a{
+        font-weight: 400;
     }
     nav #menuIcon {
         display: none;
+    }
+    main .presentationName {
+        margin: 3rem 0;
+    }
+    .presentationLogosExp picture {
+        margin: 0 1.5rem 0 0;
+    }
+    main {
+        margin-top: 10rem;
+        padding: 0 5rem;
     }
     nav .navMenu {
         width: 100%;
@@ -437,37 +431,18 @@ footer {
         top: 0;
         right: 0;
     }
-
-    .navMenu ul {
-        display: flex;
-    }
-
     .navMenu ul li {
         margin-right: 20px;
         transition: all 300ms;
     }
-    .navMenu ul li a{
-        font-weight: 400;
-    }
-
-    main {
-        margin-top: 10rem;
-    }
-
     main .presentationContainer {
         background-image: url('../images/logos-images/photo\ desktop.png');
         background-size: 28rem;
     }
-
     main .background {
         width: 41rem;
         height: 44rem;
     }
-
-    main .presentationName {
-        margin: 3rem 0;
-    }
-
     main .presentationInfo {
         max-width: 200px;
         margin-left: 120px;
@@ -475,33 +450,24 @@ footer {
         top: 0;
         text-align: start;
     }
-
     .presentationName h1 {
         border-bottom: none;
         padding: .8rem .8rem .8rem 0;
         margin: 1rem 2rem 1rem 0; 
         font-size: 3.6rem;
     }
-
     .presentationName h1 span {
         border-top: .2px solid var(--white);
         margin-top: .8rem;
         padding-top: 10px;
     }
-
     .presentationInfo p {
         font-size: 1.8rem;
     }
-
     .presentationLogosExp {
         display: flex;
         justify-content: start;
     }
-
-    .presentationLogosExp picture {
-        margin: 0 1.5rem 0 0;
-    }
-
     .presentationLogos {
         gap: 4rem;
         margin-top: -3rem;
@@ -510,7 +476,6 @@ footer {
         margin-left: auto;
         margin-right: auto;
     }
-
     .presentationLogos picture {
         width: 13rem;
         height: 9rem;
