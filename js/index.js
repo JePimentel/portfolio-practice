@@ -5,6 +5,7 @@ const ux = document.querySelector('#ux')
 const menuIcon = document.querySelector('#menuIcon')
 const navMenu = document.querySelector('.navMenu')
 const main = document.querySelector('#main')
+const sections = document.querySelectorAll('#sections')
 
 const loading = (entries, observer) => {
     if (entries[0].isIntersecting) {
@@ -26,4 +27,14 @@ menuIcon.addEventListener('click', () => {
     navMenu.classList.toggle('menuOpen')
     main.classList.toggle('mainBlur')
 })
+
+sections.forEach(section => {
+    section.addEventListener('click', () => {
+        navMenu.classList.remove('menuOpen')
+        main.classList.remove('mainBlur')
+    })
+})
+
+
+
  

@@ -20,38 +20,40 @@
             </picture>
             <div class="navMenu">
                 <ul>
-                    <li class="navHome"><a href="#">Home</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">About me</a></li>
-                    <li><a href="#">My skills</a></li>
-                    <li><a href="#">My portfolio</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li class="navHome"><a id="sections" href="#presentationContainer">Home</a></li>
+                    <li><a id="sections" href="#services">Services</a></li>
+                    <li><a id="sections" href="#aboutMe">About me</a></li>
+                    <li><a id="sections" href="#mySkills">My skills</a></li>
+                    <li><a id="sections" href="#myPortfolio">My portfolio</a></li>
+                    <li><a id="sections" href="#contact">Contact</a></li>
                 </ul>
             </div>
         </nav>
     </header>
     <main id="main">
-        <section class="presentationContainer">
+        <section id="presentationContainer" class="presentationContainer">
             <div class="background"></div>
-            <div class="presentationName">
-                <h1>Soy <span>Jorge</span></h1>
-                <p>Marketing y diseñador UX/UI</p>
-            </div>
-            <div class="presentationExp">
-                <p><span>3 años</span> experiencia</p>
-                <div class="presentationLogosExp">
-                    <picture>
-                        <img src="./images/icons/linkedin.svg" alt="linkedin">
-                    </picture>
-                    <picture>
-                        <img src="./images/icons/instagram.svg" alt="instagram">
-                    </picture>
-                    <picture>
-                        <img src="./images/icons/twitter.svg" alt="twitter">
-                    </picture>
+            <div class="presentationInfo">
+                <div class="presentationName">
+                    <h1>Soy <span>Jorge</span></h1>
+                    <p>Marketing y diseñador UX/UI</p>
+                </div>
+                <div class="presentationExp">
+                    <p><span>3 años</span> experiencia</p>
+                    <div class="presentationLogosExp">
+                        <picture>
+                            <img src="./images/icons/linkedin.svg" alt="linkedin">
+                        </picture>
+                        <picture>
+                            <img src="./images/icons/instagram.svg" alt="instagram">
+                        </picture>
+                        <picture>
+                            <img src="./images/icons/twitter.svg" alt="twitter">
+                        </picture>
+                    </div>
                 </div>
             </div>
-            <div class="presentationLogosBackground"></div>
+            <!-- <div class="presentationLogosBackground"></div> -->
             <div class="presentationLogos">
                 <picture>
                     <img src="./images/icons/google.svg" alt="google">
@@ -64,7 +66,7 @@
                 </picture>
             </div>
         </section>
-        <section class="aboutMe">
+        <section id="aboutMe" class="aboutMe">
             <h2>Acerca de mí</h2>
             <p>
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
@@ -72,7 +74,7 @@
                 distinctio magnam,
             </p>
         </section>
-        <section class="services">
+        <section id="services" class="services">
             <h2>Servicios</h2>
             <div class="servicesCards">
                 <div class="serviceCard">
@@ -95,7 +97,7 @@
                 </div>
             </div>
         </section>
-        <section class="mySkills">
+        <section id="mySkills" class="mySkills">
             <h2>Mis hablididades</h2>
             <div class="skills">
                 <div class="skill">
@@ -127,7 +129,7 @@
                 </div>
             </div>
         </section>
-        <section class="myPortfolio">
+        <section id="myPortfolio" class="myPortfolio">
             <h2>Mi portafolio</h2>
             <div class="portfolios">
                 <picture><img src="./images/logos-images/ejemplo5.jpg" alt="portfolio"></picture>
@@ -135,19 +137,21 @@
                 <picture><img src="./images/logos-images/ejemplo3.jpg" alt="portfolio"></picture>
             </div>
         </section>
-        <section class="contactCards">
+        <section id="contact" class="contact">
             <h2>Contacto</h2>
-            <div class="contactCard">
-                <div class="vector"></div>
-                <img src="./images/icons/phone.svg" alt="phone">
-                <h3>Número celular</h3>
-                <span>5523652412</span>
-            </div>
-            <div class="contactCard">
-                <div class="vector"></div>
-                <img src="./images/icons/mail.svg" alt="email">
-                <h3>Email</h3>
-                <span>ejemplo@correo.com</span>
+            <div class="contactCards">
+                <div class="contactCard">
+                    <div class="vector"></div>
+                    <img src="./images/icons/phone.svg" alt="phone">
+                    <h3>Número celular</h3>
+                    <span>5523652412</span>
+                </div>
+                <div class="contactCard">
+                    <div class="vector"></div>
+                    <img src="./images/icons/mail.svg" alt="email">
+                    <h3>Email</h3>
+                    <span>ejemplo@correo.com</span>
+                </div>
             </div>
         </section>
     </main>
