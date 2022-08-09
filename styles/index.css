@@ -494,4 +494,8 @@ footer {
     .servicesCards {
         justify-content: space-evenly;
     }
+
+    .myPortfolio .portfolios {
+        justify-content: space-evenly;
+    }
 }
